@@ -11873,6 +11873,20 @@ function quux ({foo: bar}) {
 module.exports = function a(b) {
   console.info(b);
 };
+
+/**
+ * Description.
+ * @param {object} options Options.
+ * @param {FooBar} options.foo A description.
+ */
+function quux ({ foo: { bar } }) {}
+
+/**
+ * Description.
+ * @param {Foo} options Options.
+ * @param {FooBar} options.a A description.
+ */
+function quux ({ foo: { bar } }) {}
 ````
 
 
